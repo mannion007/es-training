@@ -1,0 +1,30 @@
+{
+    "name": "lendable/event-sourcing-training",
+    "description": "A small project to demonstrate event sourcing fundamentals",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Lendable\\EventSourcingTraining\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "James Mannion"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "behat/behat": "^3.11",
+        "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^1.8"
+    },
+    "require": {
+        "ramsey/uuid": "^4.5",
+        "moneyphp/money": "^3.3"
+    }
+}
