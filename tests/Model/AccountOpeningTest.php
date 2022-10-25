@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Tests\Model;
 
-use Lendable\EventSourcingTraining\Model\Account;
-use Lendable\EventSourcingTraining\Model\AccountOpened;
+use Mannion007\EventSourcingTraining\Model\Account;
+use Mannion007\EventSourcingTraining\Model\AccountOpened;
+use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\TestCase;
-use Tests\Support\EventStream;
 
 final class AccountOpeningTest extends TestCase
 {
@@ -18,10 +18,8 @@ final class AccountOpeningTest extends TestCase
     {
         $events = (Account::open())->popRecordedEvents();
 
-        $this->assertCount(1, $events);
+        Assert::assertCount(1, $events);
 
-        $this->assertTrue(
-            EventStream::create($events)->hasEventOfType(AccountOpened::class)
-        );
+        Assert::assertInstanceOf(AccountOpened::class, $events[0]);
     }
 }

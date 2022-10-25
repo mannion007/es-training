@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Lendable\EventSourcingTraining\Model;
+namespace Mannion007\EventSourcingTraining\Model;
 
-use Lendable\EventSourcingTraining\Common\Event;
+use Mannion007\EventSourcingTraining\Common\Event;
 use Money\Money;
 
 final class DepositMade implements Event

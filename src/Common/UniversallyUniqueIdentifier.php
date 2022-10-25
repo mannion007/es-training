@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Lendable\EventSourcingTraining\Common;
+namespace Mannion007\EventSourcingTraining\Common;
 
 use Ramsey\Uuid\Uuid;
 use Ramsey\Uuid\UuidInterface;

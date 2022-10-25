@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Lendable\EventSourcingTraining\Model;
+namespace Mannion007\EventSourcingTraining\Model;
 
-use Lendable\EventSourcingTraining\Common\UniversallyUniqueIdentifier;
+use Mannion007\EventSourcingTraining\Common\UniversallyUniqueIdentifier;
 
 final class AccountId
 {

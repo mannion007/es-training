@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Mannion007\EventSourcingTraining\Common;
 
-interface Event extends Message
+interface Command extends Message
 {
-    public function occurredAt(): \DateTimeImmutable;
+    public function issuedAt(): \DateTimeImmutable;
 }

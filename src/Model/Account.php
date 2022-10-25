@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Lendable\EventSourcingTraining\Model;
+namespace Mannion007\EventSourcingTraining\Model;
 
-use Lendable\EventSourcingTraining\Common\Event;
+use Mannion007\EventSourcingTraining\Common\Event;
 use Money\Money;
 
 final class Account
@@ -77,6 +77,20 @@ final class Account
         if (\is_callable([$this, $method])) {
             $this->{$method}($event);
         }
+    }
+
+    /**
+     * @param Event[] $events
+     */
+    public static function reconstitute(iterable $events): Account
+    {
+        $account = new self();
+
+        foreach ($events as $event) {
+            $account->apply($event);
+        }
+
+        return $account;
     }
 
     /**

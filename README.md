@@ -7,18 +7,17 @@ The example domain is intentionally trivial/naieve as the purpose of the trainin
 ### Introductory Training topics
 
 #### Theoretical
-- What is an Aggregate?
-- Core concepts of Event Sourcing
+- Introduction to event streams
+- Aggregate fundamentals
 - Domains that are typically suited to event sourcing
 
 #### Practical
-- Changing and managing state
-- Testing
-- Persistence and reconstitution
+- Changing and managing state through commands
+- Testing in event sourced systems
+- Persistence and reconstitution basics
 
-### extended training topics
-
+### Extended training topics
 - Transactions
 - Idempotency
+- Utilising events for side effects and integrations
 - Reporting/Projections
-- Integration with other systems

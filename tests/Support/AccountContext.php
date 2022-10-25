@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tests\Support;
 
-use Lendable\EventSourcingTraining\Common\Event;
-use Lendable\EventSourcingTraining\Model\Account;
+use Mannion007\EventSourcingTraining\Common\Event;
+use Mannion007\EventSourcingTraining\Model\Account;
 use PHPUnit\Framework\Assert;
 
 final class AccountContext
@@ -71,7 +71,6 @@ final class AccountContext
         $recordedEvents = $this->account->popRecordedEvents();
 
         Assert::assertCount(1, $recordedEvents);
-
         Assert::assertTrue($callable($recordedEvents[0]));
     }
 }

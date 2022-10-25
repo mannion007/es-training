@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Tests\Model;
 
-use Lendable\EventSourcingTraining\Common\Event;
-use Lendable\EventSourcingTraining\Model\Account;
-use Lendable\EventSourcingTraining\Model\DepositMade;
-use Lendable\EventSourcingTraining\Model\InsufficientFunds;
-use Lendable\EventSourcingTraining\Model\WithdrawalMade;
+use Mannion007\EventSourcingTraining\Common\Event;
+use Mannion007\EventSourcingTraining\Model\Account;
+use Mannion007\EventSourcingTraining\Model\DepositMade;
+use Mannion007\EventSourcingTraining\Model\InsufficientFunds;
+use Mannion007\EventSourcingTraining\Model\WithdrawalMade;
 use Money\Money;
 use PHPUnit\Framework\TestCase;
 use Tests\Support\AccountContext;
